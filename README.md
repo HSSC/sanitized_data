@@ -1,6 +1,14 @@
 # SanitizedData
 Data sanitization, based on attributes stored across multiple systems.
 
+## Usage
+In the model you would like to use sanitization on:
+
+```
+include SanitizedData
+sanitize_setter :title, :squeeze, :strip
+```
+
 sanitizers available:
 
 ```
@@ -9,11 +17,6 @@ squeeze: remove extra whitespace within string
 strip: remove extra whitespace from beginning and end of string
 ```
 
-## Usage
-In the model you would like to use sanitization on:
-```include SanitizedData
-sanitize_setter :title, :squeeze, :strip
-```
 
 ## Installation
 Add this line to your application's Gemfile:
