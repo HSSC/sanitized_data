@@ -3,7 +3,8 @@ Data sanitization, based on attributes stored across multiple systems.
 
 sanitizers available:
 
-```special_characters: filter out using iconv
+```
+special_characters: filter out using iconv
 squeeze: remove extra whitespace within string
 strip: remove extra whitespace from beginning and end of string
 ```
