@@ -17,6 +17,8 @@ module SanitizedData
             new_value.squeeze! ' '
           when :strip
             new_value.strip!
+          when :squish
+            new_value.squish!
           end
         end
 

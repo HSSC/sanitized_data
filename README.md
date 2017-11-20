@@ -15,6 +15,7 @@ sanitizers available:
 special_characters: filter out using iconv
 squeeze: remove extra whitespace within string
 strip: remove extra whitespace from beginning and end of string
+squish: remove whitespace from beginning and end, remove whitespace duplicated within the string, and remove newlines/tabs
 ```
 
 
