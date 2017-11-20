@@ -5,8 +5,6 @@ module SanitizedData
   extend ActiveSupport::Concern
 
   included do
-    SPECIAL_CHARACTERS_REGEX = /^[a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]+$/
-
     def self.sanitize_setter attribute, *sanitizers
       define_method("#{attribute.to_s}=") do |value|
         new_value = value.dup
