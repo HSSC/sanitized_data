@@ -13,6 +13,8 @@ module SanitizedData
           case sanitizer
           when :special_characters
             new_value = Iconv.conv 'UTF-8//IGNORE', 'ascii//TRANSLIT', new_value
+          when :epic_special_characters
+            new_value.delete! '[]|^'
           when :squeeze
             new_value.squeeze! ' '
           when :strip
